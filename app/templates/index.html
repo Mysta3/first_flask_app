@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Flask App</title>
+    <style>
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    
+    body{
+        background: #0F2027;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    }
+    .top-content{
+        background-color: black;
+        color: rgb(14, 228, 243);
+        font-size: 3vh;
+        text-align: center;
+        max-width: 100vw;
+        padding: 2%;
+    }
+
+    #description{
+        color: whitesmoke;
+    }
+
+    .main{
+        background-color: whitesmoke;
+        border-radius: 5%;
+        box-shadow: 0px 5px 4px rgb(14, 240, 240);
+        margin: 30px;
+        padding: 2%;
+    }
+    #first-paragraph, #second-paragraph{
+        margin: 2%;
+        padding: 2%;
+    }
+    h2{
+        text-decoration: underline;
+    }
+    p{
+        margin: 2%;
+    }
+
+    a{
+        background-color: whitesmoke;
+        color: black;
+        border-radius: 5%;
+        margin-left: 20px;
+        padding: 1%;
+        text-decoration: none;
+    }
+    a:hover{
+        color: white;
+        background: black;
+    }
+
+    </style>
+</head>
+<body>
+    <div class="top-content">
+        <h1>Welcome To My Flask App</h1>
+        <small id="description">Simple App Built To Understand Flask</small>
+    </div>
+    <hr>
+    <section class="main">
+        <div id="first-paragraph">
+            <h2 class="section-title">What Is Flask??</h2>
+            <p>Flask is: a lightweight Python web framework that make creating web applications in Python easier....</p>
+            <p>Or so they say LOL</p>
+        </div>
+        <div id="second-paragraph">
+            <h2 class="section-title">How Long??</h2>
+            <p>I came from a Django backgorund which is used in Fullstack development. So it's a Python web framework but for
+            FullStack Development aka it Abstracts a lot of things away BKA MAKES THINGS MAGIC!!</p>
+            <p>Setting that up was a lot easier than getting Flask to run, but it could also be because I was not using PyCharm..
+            </p>
+        </div>
+        
+
+        <p>Aye! Don't just me!! (. .) I learned my lesson!</p>
+    </section>
+    <a  href="http://127.0.0.1:5000/sample_form">Click Me</a>
+
+</body>
+</html>
