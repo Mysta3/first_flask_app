@@ -6,6 +6,38 @@
     <title>Document</title>
 
     <style>
+        h1{
+            text-align: center;
+        }
+        .name_card{
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            border: 2px solid black;
+            border-top-left-radius: 5%;
+            border-top-right-radius: 5%;
+            margin-left: 33vw;
+            margin-top: 5vh;
+            max-width: 30%;
+            text-align: center;
+        }
+        h3{
+            margin: 0;
+            padding: 5%;
+            background-color: black;
+            color: rgb(14, 228, 243);
+            
+        }
+
+        p{
+            color: rgb(29, 216, 29);
+            font-size: 24px;
+            padding:5%;
+        }
+        p:hover{
+            color: orangered;
+
+        }
         a{
         background-color: whitesmoke;
         color: black;
@@ -13,6 +45,7 @@
         margin-left: 20px;
         padding: 1%;
         text-decoration: none;
+
     }
     a:hover{
         color: white;
@@ -22,6 +55,11 @@
 </head>
 <body>
     <h1>THANKS FOR SUBMITTING!</h1>
+    <div class="name_card">
+        <h3><strong>Name On File</strong></h3>
+        <p>{{full_name}}</p>
+    </div>
+    
     <a href="http://127.0.0.1:5000/">Go Back</a>
 </body>
 </html>

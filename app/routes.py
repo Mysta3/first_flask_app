@@ -28,5 +28,5 @@ def post_data():
     if request.method == "POST":
         first_name = str(request.form['first_name'])
         last_name = str(request.form['last_name'])
-        print(f'{first_name} " : "{last_name}')
-    return redirect("http://127.0.0.1:5000/thanks", code=302)
+        full_name = f'{first_name} {last_name}'
+    return render_template('thanks.html', full_name=full_name)
